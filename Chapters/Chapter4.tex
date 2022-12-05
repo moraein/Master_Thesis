@@ -1,0 +1,413 @@
+% Chapter Template
+
+\chapter{Determination of Electron Fake Background} % Main chapter title
+\label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+There are several background processes that mimic the topology of $t\overline{t}\gamma$ such as single top + $\gamma$. The backgrounds are classified into three categories based on the photon: hadronic-fake, electron-fake, and prompt-photon backgrounds. The background categories are briefly described in the following. In this thesis, the aim was to measure the contribution of \textit{e}-fake (electron-fake) background for l+jets and dilepton $tt+\gamma$ analyses. The \textit{e}-fake background is not expected to be well modeled by the MC simulations. Therefore, the number of expected background events needs to be corrected by measurements on data. A method based on data was developed to measure \textit{e}-fake contribution using \textit{Z}-boson decay events. In this method, the fraction of events with fake-$\gamma$ over the measured events with electrons defined as fake rate. In order to select a pure sample of $e$ and fake-$\gamma$, the events were selected in pairs of \textit{ee} and $e\gamma$ from the \textit{Z}-boson decay. Figure \ref{fig:FeynmanDiagramZee} shows the Feynman diagram of \textit{Z}-boson production and decay. The \textit{Z}-boson events are selected to ensure that the probe electron and photon (fake electron) of choice are correlated  and can be compared to each other. The high cross-section of \textit{Z}-boson, also allows having a statistically high and pure sample for the measurement, which cannot be achieved by using the $t\overline{t}\gamma$ or any other events. However, using the Z-boson events to calculate the \textit{e}-fake contribution in $t\overline{t}\gamma$ analysis required to assume that the $e \rightarrow \gamma$ fake rate is independent of the process.
+
+\begin{figure}[H]
+\centering
+\feynmandiagram [horizontal=a to b] {
+i1 [particle=\(q\)] -- [fermion] a -- [fermion] i2 [particle=\(\overline q\)],
+a -- [boson, edge label=\(Z^{0}\),] b,
+f1 [particle=\(e^{+}\)] -- [fermion] b -- [fermion] f2 [particle=\(e^{-}\)],
+};
+\decoRule
+\caption{Feynman diagram of Z-boson production and decay into electron-positron.}
+\label{fig:FeynmanDiagramZee}
+\end{figure}
+
+In this chapter, first a short description of the $t\overline{t}\gamma$ backgrounds is given. Second, information about the data and simulation samples is presented. Third, the tag-and-probe method is described, which is used to estimate the fake rate in both data and simulation. Fourth, the definition of the control regions are given, and the event selection and object selection criteria are described. Afterward, the fake rate calculation for MC, data and the resulting fake rate scale factors are described in three sections. In a sub-chapter, the systematic uncertainties calculation and relevant fits have been added. In the last section, an additional calculation is done for the fake rate scale factors dependency on the photon conversion type.
+
+\section{Background Description}
+
+The main background of $t\overline{t}\gamma$ process are classified as:
+
+\begin{itemize}
+\item \textbf{Hadronic-fake background}: During the hadronization process of quarks after the main $pp$ collision, several hadrons such as $\pi^{0}$, $\eta$ and $\rho$ mesons or baryons are produced. These mesons and baryons can then decay into two or three photons which are ultimately misidentified as photons by the detector. Additionally, mesons and baryons energy deposits to calorimeter can also be similar to photons. The background coming from these processes has the largest contribution in $t\overline{t}\gamma$ analysis. The majority of hadronic-fake photons in the single-lepton channels come from $t\overline{t}$ events where a final state jet radiates a photon.
+
+\item \textbf{Electron-fake background}: An important background to $t\overline{t}\gamma$ single-lepton channel, which is also the topic of this thesis, comes from the electrons misidentified as photons. The background contribution originates from two main processes, the $t\overline{t}\gamma$ dileptonic decay when at least one of the final state leptons is an electron and, the Z + jets events when the Z-boson decays into electron positron pair ($Z \rightarrow e^{+} + e^{-}$).
+
+\item \textbf{Prompt photon background}: The object that originates before the hadronization, from the hard scattering process, is called the prompt object. In case of the semileptonic channel of top quark pair production, photons that are emitted from either the incoming quarks or the top quarks or its electrically charged decay products are prompt photons. This type of photon is also the photon object of interest for the final state in $t\overline{t}\gamma$ analysis. The prompt-photon background comes from the processes containing prompt photon in the final state, such as $W\gamma$, $Z\gamma$, single top, and diboson + $\gamma$.
+\end{itemize}
+
+\section{Data and Simulation Samples}
+\label{samples}
+
+The proton-proton collision data at $\sqrt{s}=13$ TeV of the LHC recorded by the ATLAS detector between years of 2015-2018 is used in this study. The total integrated luminosity of the data-set is $\mathcal{L}=139$ fb$^{-1}$.
+
+The Monte Carlo (MC) simulation samples are generated by SHERPA (Simulation of High-Energy Reactions of PArticles). SHERPA is one of the MC programs which can generate lepton-lepton, lepton-photon, photon-photon, lepton-hadron and hadron-hadron collisions events. MC generators produce the events with all the kinematics and information similar to the data events produced at the LHC. After that step, detector simulation, trigger and event reconstruction of the ATLAS experiment are added on top of the generated events. SHERPA includes next-to-next-to-leading-order (NNLO) matrix element, and is used to simulate Z+jets events for the measurements.
+
+\section{Tag and Probe Method}
+\label{method}
+Tag and probe method depends upon the choice of a clean and with high purity sample, in this case $Z\rightarrow ee$, making use of the \textit{Z}-boson mass constraint. The total events are divided into two control regions (CR) of CR1 (containing $Z\rightarrow ee$) and CR2 (containing $Z\rightarrow e\gamma$), see section \ref{selection}. Tighter selection criteria are applied to the so-called tag electron which is required to have fired trigger, and the other one with looser selection, named probe electron (or photon). In this method, the tag is used for reference, and the probe is the sample to be tested. As the tag and probe are coming from \textit{Z}-boson decay, they are kinematically correlated. The only limiting factor in this method is the Z-boson event number. To account for background, the lepton-pair (or lepton-photon pair) invariant mass spectrum is fitted around the $Z$ mass peak using the sum of the Crystal-Ball function and the Bernstein polynomial, described in section \ref{datafc}.
+
+\section{Control Regions and Event Selection}
+\label{selection}
+
+First control region is defined with events containing two electrons (CR1), tag, and probe, and the tag electron has to be trigger matched. To ensure that the tag and probe objects are coming from the Z boson decay, the two particles required to have the opposite charge and the opening angle between them should be more than $150^\circ$. Besides, the invariant mass of the two particles needed to be within 50 GeV around the Z-boson mass.
+A Second control region is defined the same as the first control region by replacing the probe electron with the photon (CR2). There is no process such $Z\rightarrow e+\gamma$, but this can be since one of the produced electrons in $Z\rightarrow e+e$ decay can radiate a high energy photon in the same direction as the mother electron and remain undetected, instead photon will be detected in the final stage. The photon and electron leave a similar impact on electromagnetic calorimeter, and the electron leaves a track in addition to the energy deposit in the calorimeter. Sometimes if the track is missing or not correctly created, the electron can be identified as a photon.
+
+The event selection is applied accordingly in both control regions. The first control region with events containing electron and positron having invariant mass of around Z-boson. The events with exactly one electron and one photon have been selected for second control region. The two control regions referred as $Z \rightarrow ee$ (CR1) and $Z \rightarrow e\gamma$ (CR2) and almost same selection criteria are applied for both regions. To get exactly the desired events, the following object selection criteria is applied:
+\begin{itemize}
+\item exactly 2 objects depending on control region ($e, e/\gamma$)
+\item tag electron is trigger matched
+\item $p_{T}^{tag} > 25GeV, p_{T}^{probe} > 20 GeV$
+\item $|\eta^{tag}| < 2.47, |\eta^{probe}| < 2.37$ (excluding the crack region $1.37 < |\eta| < 1.52$)
+\item $M_{Z}-50 GeV/c^{2} < M(e^{tag},{e/\gamma}^{probe}) < M_{Z}+50 GeV/c^{2}$
+\item $\Delta\phi (tag,probe) > 150^\circ$
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Fake Rates in MC Simulations}
+\label{mcfc}
+
+The selected MC events in the $e\gamma$ control region can be classified as different sources of efakes depending on the origin of the $\gamma$. To do that, a reconstructed photon in the event matched to the true object before the detector simulation (defined as truth matching). The truth matching is achieved by extrapolating the track of the true particle to the calorimeter and measuring the angular distance (defined in the following) between the true particle and the EM cluster, from which the photon is reconstructed. If the angular distance is smaller than a reference value, the reconstructed photon is considered to be associated with the true object, either a $\gamma$ or and $e$. At hadron colliders, the angular distance ($\Delta$R) is defined using pseudo-rapidity ($\eta$) and azimuthal angle ($\phi$) the way that it remains invariant under the longitudinal boosts. The definitions are given in section \ref{section:ATLAS}.
+
+\subsection{Photon Classification}
+
+According to the truth matching, the photons are divided into four groups according to the truth-level information.
+
+\begin{itemize}
+\item Type (a) : denoted as "mis-reco.", in the cases where the probe $\gamma$ is matched to a true \textit{e}. 86\% of the selected photons belong to this class.
+\item Type (b) : denoted as "mis-match", in the cases where the probe $\gamma$ is matched to a true $\gamma$ and their relative $p_{T}$ difference $|p_{T}^{reco} - p_{T}^{true}|/p_{T}^{true}|$ is more than 10\% and there is nearby a true electron within $\Delta$R < 0.1 of the photon. Around 2\% of the selected photons belong to this class.
+\item Type (c) : denoted as "non-prompt QED", in the cases where the probe $\gamma$ is matched to a true $\gamma$ and their relative $p_{T}$ difference is less than 10\% and there is nearby true electron within $\Delta$R < 0.1 of the photon. Around 3\% of the probe photons belongs to this category.
+\item Type (d) : denoted as "prompt QED" in the cases where the probe $\gamma$ is matched to a true $\gamma$ and there is no nearby true electron within $\Delta$R < 0.1 of the photon. Around 9\% of the probe photons belongs to this category.
+\end{itemize}
+
+In the above categorization, Type (a),(b), and (c) are considered as fake photons, where the type (d) corresponds to prompt photons. Overall around 91\% of the selected probe photons are fake photons in $e\gamma$ control region.
+In the following the kinematic variables of the different types of probe photons and the probe electrons are shown in figures \ref{fig:mc_probe_pt} and \ref{fig:mc_probe_eta}. The shape of the transverse momentum distribution is quite similar for the type (a),(b),(c) photons, and the probe electron. The shape of type (d) photon is different from others, and the peak, in this case, is shifted to the left. A similar effect can also be noted for the invariant mass spectrum of each type. The pseudo-rapidity spectrum shows a similar behavior between type (a),(b) with probe $e$ and type (c), and (d) have a similar $\eta$ distribution.
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.7}{\input{Figures/mc_probe_pt.tex}}
+\caption{$p_{T}$ distribution of probe $e/\gamma$}
+\label{fig:mc_probe_pt}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.7}{\input{Figures/mc_probe_eta.tex}}
+\caption{$\eta$ distribution of probe $e/\gamma$}
+\label{fig:mc_probe_eta}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.7}{\input{Figures/mc_mass.tex}}
+\caption{Invariant mass distribution between tag and probe objects depending on the probe classification}
+\label{fig:mc_mass}
+\end{center}
+\end{figure}
+
+\subsection{Fake Rate}
+
+The fake rate is defined as the number of events in $Z\rightarrow e\gamma$ (\textit{$N_{e\gamma}$}) over the events counts in $Z \rightarrow ee$ control region (\textit{$N_{ee}$}), in other words the ratio of fake electrons over the true electrons. The ratio of the probe over tag object events in each control region can give us the probability of the electron to be misreconstructed as a $\gamma$. The above classification of the probe photon is used to exclude the prompt photons and estimate the fake rate in MC.
+
+\begin{equation}
+FR_{MC} = \frac{N_{e\gamma}}{N_{ee}}
+\label{eqn:fakerate}
+\end{equation}
+
+From equation \ref{eqn:fakerate} the fake rate can be calculated for each bin, first the inclusive fake rates have been calculated. The MC fake rate for each class of probe photon is given in table \ref{tab:mc_fc}. Major contribution of the fakes is coming from the type (a) and type (b) and (c) have very tiny contribution as expected because 86\% of the probe photons classified as type (a). The differential fake rate also has been measured as for application the differential calculation is needed to account for differences in the fake rate depending on the kinematic properties of $e^-$ and $\gamma$. The inclusive fake rate is only given to have an idea about the overall ratio of the fakes depending on the probe photon type.
+%In the fake rate calculation, the type (d) photons are excluded as they are the prompt-QED photons and not considered as fake photons.
+
+\begin{table}
+\caption{Number of MC events in each $\gamma$ category and fake rate for each type of reconstructed photon. Only statistical uncertainties are given.}
+\label{tab:mc_fc}
+\centering
+\begin{tabular}{l l l }
+\toprule
+Class & $N(\gamma^{probe})$ & $FR_{MC}(\%)$\\
+\midrule
+Type(a) & $1698959\pm1303$ & $3.59\pm0.09\%$\\
+Type(b) & $34752\pm186$ & $0.07\pm0.55\%$\\
+Type(c) & $60152\pm245$ & $0.13\pm0.42\%$\\
+Type(d) & $167999\pm409$  & $0.35\pm0.26\%$\\
+All (Fakes) & $1793864\pm1339$ & $3.79\pm0.09\%$\\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.7}{\input{Figures/mc_fc_pt.tex}}
+\caption{The fake rate as a function of $p_{T}$ of the probe particles.}
+\label{fig:mc_fc_pt}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.7}{\input{Figures/mc_fc_eta.tex}}
+\caption{The fake rate as a function of $\eta$ of the probe particles.}
+\label{fig:mc_fc_eta}
+\end{center}
+\end{figure}
+
+As can be seen from the figures \ref{fig:mc_fc_pt} and \ref{fig:mc_fc_eta}, the fake rate varies for different $p_{T}$ and $\eta$. To apply the fake rate scale factors into the signal region the dependency on the kinematic variables needed to be considered. So the differential fake rates have been calculated and presented in a 2D histogram. The events in both control regions divided into 20 bin depending on $p_{T}$ and $|\eta|$. The binning for $p_{T}$ is [20, 35, 45, 60, 100] (in GeV) and for $\eta$ is [0, 0.5, 1.0, 1.37] and [1.52, 2.0, 2.37]. The $Z\rightarrow ee$ and $Z\rightarrow e\gamma$ events distribution after the binning is give in figures \ref{fig:h2_mc_zee_probe} and \ref{fig:h2_mc_zeg_probe} respectively. The $p_{T}$-bin [35-45GeV] is more populated in both control regions as expected because of the kinematic properties of the electrons coming from the decay of the $Z$ boson, with a mass of $90GeV$. MC fake rates are presented in figure \ref{fig:h2_mc_fc}, it shows that the fake rates increase by $|\eta|$ and $p_{T}$, but the changes in $p_{T}$ have a relatively smaller impact on the fake rates. The fake rates vary from $1.42\%\pm0.02\%$ in low $p_{T}-\eta$-region to at most $12.09\%\pm0.15\%$ for high $p_{T}$ and $|\eta|$ values. The uncertainties correspond to statistical only.
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_mc_zee_probe.tex}}
+\caption{Signal events in the $Z \rightarrow e^{+}e^{-}$ control region divided into 20 bins according to the $p_{T}$ and $\eta$ of the probe particle.}
+\label{fig:h2_mc_zee_probe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_mc_zeg_probe.tex}}
+\caption{Signal events in the $Z \rightarrow e\gamma$ control region divided into 20 bins according to the $p_{T}$ and $\eta$ of the probe particle.}
+\label{fig:h2_mc_zeg_probe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_mc_fc.tex}}
+\caption{The 2D histogram of the final MC fake rate in 20 bins of $p_{T}$ and $\eta$ of the probe particle. Bin value shows the fake rate for the corresponding bin in percentage (the values are multiplied by 100).}
+\label{fig:h2_mc_fc}
+\end{center}
+\end{figure}
+
+
+\section{Fake Rate Estimation in Data}
+\label{datafc}
+The events in data have been selected with the criteria discussed in section \ref{selection}. After the final event selection, the event count in the $Z \rightarrow e^{+}e^{-}$ control region was around 50 million, and around 2.5 million events survived after applying the final cuts in $Z \rightarrow e\gamma$ control region. Unlike the MC events, data events include background events which are coming from other processes that have similar final state with \textit{ee} or $e\gamma$ such as $t\overline{t}$, \textit{Z/W}+jets, diboson events and \textit{Z} decay to \textit{ee} from \textit{Z} decay to $\tau$. As we expect background in the data sample, it is required to estimate the background and signal ratio. Since the background contribution is not included in the MC, the MC samples cannot be used for the background subtraction. The fits are used to get the signal and background contribution; the sum of two Crystal-ball functions models the signal, and a Bernstein-polynomial is used to model the background. The sum of the two models is used to describe the data events distribution. The fitting results were better in the CR2 comparing with the fits in CR1. The $\chi^2 /ndf$ shows the goodness of the fits, values closer to one show a better agreement between the data and fit model. Figure \ref{fig:fit} shows the fits in both control regions.
+The Crystall-Ball function is given by:
+\[f(x;\alpha,n,\overline{x},\sigma) = \left\{
+  \begin{array}{lr}
+    \exp(-\dfrac{(x-\overline{x})^2}{2\sigma^2}) & : \dfrac{x-\overline{x}}{\sigma} > -\alpha\\
+    A.(B-\dfrac{x-\overline{x}}{\sigma})^{-n} & : \dfrac{x-\overline{x}}{\sigma} \leq -\alpha
+  \end{array}
+\right.
+\]
+where
+
+\begin{equation}
+\begin{split}
+A & = (\dfrac{n}{|\alpha|})^n .\exp(-\dfrac{|\alpha|^2}{2}), \\
+B & = \dfrac{n}{|\alpha|} - |\alpha|, \\
+N & = \dfrac{1}{\sigma(C + D)}, \\
+C & = \dfrac{n}{|\alpha|}. \dfrac{1}{n-1} .\exp(-\dfrac{|\alpha|^2}{2}), \\
+D & = \sqrt{\frac{\pi}{2}} (1+erf(-\dfrac{|\alpha|}{\sqrt{2}})).
+\end{split}
+\end{equation}
+
+The Bernstein-polynomial is the sum of Bernstein basis polynomial with a coefficient. The polynomial basis with n degrees of freedom is given by
+
+\begin{equation}
+b_{\nu,n}(x) = \binom{n}{\nu}x^\nu(1-x)^{n-\nu}, \nu = 0,...,n
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.35}{\input{Figures/Zeg_fit.tex}}\scalebox{0.35}{\input{Figures/Zee_fit.tex}}
+\caption{Invariant mass distribution for the tag and probe pair in CR1 (right) and CR2 (left). Data is shown in black, the total fit function in blue, signal function in red and background function in green, respectively.}
+\label{fig:fit}
+\end{center}
+\end{figure}
+
+To calculate the differential fake rates in the data, the data events in both control regions were divided into the same 20 $p_{T}-\eta$ bins as in MC. The shape of the distributions is similar for different $\eta$ ranges for the same $p_{T}$ range. The fit models are changed accordingly to get the best description of the $Z\rightarrow ee$ invariant mass distribution. The Bernstein polynomial is varied between 3rd and 4th order depending on the shape of the distribution.
+
+\begin{equation}
+FR_{Data}^i = \frac{N_{e\gamma}^{data,i}-N_{e\gamma}^{non-Z,i}}{N_{ee}^{data,i}-N_{ee}^{non-Z,i}}
+\label{eqn:datafakerate}
+\end{equation}
+
+The inclusive fake rate calculated using the equation \ref{eqn:datafakerate} in the data is $3.95\%\pm0.25\%$. And from the equation below, the measured overall fake rate scale factor is $1.04\pm0.33\%$ defined as $SF_{FR}^i = \frac{FR_{Data}^i}{FR_{MC}^i}$. This is the value by which the prediction has to be corrected to describe the data.
+
+In the figure \ref{fig:fit_log} the fitted invariant masses are shown for 1st $\eta$-bin in both control regions. A complete set of fit plots can be found in appendix \ref{AppendixA}. The results are shown here for $0.0<|\eta|<0.5$ for illustration. The shape of the distribution in other regions of $|\eta|$ is similar. The integral of the signal function is used for the event count to calculate the fake rate in the data. The event counts for each bin is summarized in figures \ref{fig:h2_data_zee_probe} and \ref{fig:h2_data_zeg_probe}. The $p_{T}$-bin [35-45] GeV is more populated in both control regions as expected from the MC samples since $p_{T}$ distribution peaks at about $M_{\frac{Z}{2}}$.
+Using the equation \ref{eqn:datafakerate} the fake rates are measured for each bin and shown in \ref{fig:h2_data_fc}. The distribution of the fake rates in the data follows the same pattern as MC and it increases by $\eta$, while the changes in $p_{T}$ have a relatively smaller impact on the fake rates. The fake rate varies from $2.5\%$ in the central region of the detector ($|\eta|<1$) to $11\%$ in the endcap region ($|\eta|>2.0$). The differences in $p_{T}$ are below $0.5\%$, except for the $2.0<|\eta|<2.37$ region. The uncertainties correspond to statistical only; the systematic uncertainties are discussed in the next section and results are presented with total uncertainties.
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt1.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt1.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt2.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt2.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt3.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt3.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt4.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt4.tex}}
+\caption{The fit in zee (left) and zeg (right) control regions from four $p_{T}-\eta$ bins. As the shape is similar by changes in $\eta$, only the 1st $\eta$-bin fits are shown.}
+\label{fig:fit_log}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_data_zee_probe.tex}}
+\caption{Signal events in $Z \rightarrow e^{+}e^{-}$ control region divided into 20 bins according to $p_{T}$ and $\eta$ of the probe particle.}
+\label{fig:h2_data_zee_probe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_data_zeg_probe.tex}}
+\caption{Signal events in $Z \rightarrow e\gamma$ control region divided into 20 bins according to $p_{T}$ and $\eta$ of the probe particle.}
+\label{fig:h2_data_zeg_probe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_data_fc.tex}}
+\caption{The 2D histogram of the final data fake rate in 20 bins of $p_{T}$ and $\eta$ of the probe particle. Bin value shows the fake rate for the corresponding bin in percentage (the values are multiplied by 100).}
+\label{fig:h2_data_fc}
+\end{center}
+\end{figure}
+
+\section{Systematic Uncertainties}
+\label{systematic}
+
+The systematic uncertainties for the fake rate scale factors measurement, have been calculated by consideration of the following variations:
+
+\begin{itemize}
+\item \textbf{Fitting range:} The fitting range for the invariant mass distribution of tag and probe reduced by 10 GeV (5 GeV from low tail and 5 GeV from high tail). The resulting scale factor is calculated to be $1.03\pm0.81\%$. It shows less than $1\%$ difference with the nominal scale factor.
+\item \textbf{Signal template:} The signal modeling function is changed from the sum of two Crystal-Ball functions to monte carlo template. The calculated scale factor by this change is $1.13\pm0.52\%$ which shows around $9\%$ difference with the nominal scale factors
+\item \textbf{Background template:} The function for background modeling is changed from a Bernstein-Polynomial to a Gaussian function. By changing the background model the scale factor is $1.08\pm0.72\%$ and which is less than $4\%$ difference.
+\end{itemize}
+
+The effect of changing the fit model and fit range can be seen from the figures \ref{fig:fit_sys1}, \ref{fig:fit_sys2} and \ref{fig:fit_sys3}, the fits are shown for each variation only for $|\eta|-[0.0-0.5]$. Complete set of the fits are given in appendices \ref{AppendixB}, \ref{AppendixC}, and \ref{AppendixD}. The total systematic uncertainty is calculated as the square root of quadrature sum of the three systematics. Each systematic uncertainty evaluated by difference between the data scale factor and the scale factor for the selected events for systematics sample. The total uncertainty results from $5\%$ to $25\%$ and it is dominated by low $p_{T}$ region ($[20-35]GeV$).
+
+\begin{equation}
+\sigma_{total}^{2} = \sigma_{1}^{2} + \sigma_{2}^{2} + \sigma_{3}^{2}
+\label{eqn:systematics}
+\end{equation}
+
+in which
+
+\begin{equation}
+\sigma_{i} = |SF_{data} - SF_{i}|
+\label{eqn:systematic}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt1_sys1.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt1_sys1.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt2_sys1.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt2_sys1.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt3_sys1.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt3_sys1.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt4_sys1.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt4_sys1.tex}}
+\caption{The fit in zee (left) and zeg (right) control regions from four $p_{T}-\eta$ bins and the fit range is reduced by 10GeV as compare to the \ref{fig:fit_log}. As the shape is similar by changes in $\eta$, only the 1st $\eta$-bin fits are shown.}
+\label{fig:fit_sys1}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt1_sys2.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt1_sys2.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt2_sys2.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt2_sys2.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt3_sys2.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt3_sys2.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt4_sys2.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt4_sys2.tex}}
+\caption{The fit in zee (left) and zeg (right) control regions from four $p_{T}-\eta$ bins and the signal model is changed from the Crystal-Ball function to the MC template. As the shape is similar by changes in $\eta$, only the 1st $\eta$-bin fits are shown.}
+\label{fig:fit_sys2}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt1_sys3.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt1_sys3.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt2_sys3.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt2_sys3.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt3_sys3.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt3_sys3.tex}}
+\scalebox{0.35}{\input{Figures/Zee_fit_eta1pt4_sys3.tex}}\scalebox{0.35}{\input{Figures/Zeg_fit_eta1pt4_sys3.tex}}
+\caption{The fit in zee (left) and zeg (right) control regions from four $p_{T}-\eta$ bins and the background model is change to Gaussian function from the Bernstein polynomial. As the shape is similar by changes in $\eta$, only the 1st $\eta$-bin fits are shown.}
+\label{fig:fit_sys3}
+\end{center}
+\end{figure}
+
+\section{Fake Rate Scale Factors}
+\label{fcsfs}
+
+The fake rate scale factors are presented in \ref{fig:h2_sf_final} with statistical and systematic uncertainties. The differential scale factors will be applied to the MC signal region to correct the e-fake background estimation. The scale factors are calculated for each bin from the data fake rates over the MC fake rates $SF_{FR}^i = \frac{FR_{Data}^i}{FR_{MC}^i}$. By calculating the e-fake contribution from one process and applying to another process we are considering the fact that the mis-modeling e-fake in MC is universal and independent from the process itself. The numbers presented vary for different $p_{T}$ and $\eta$, so SFs will be applied according the kinematics of the particle in the signal region and it's more accurate than applying an overall fake rate scale factor neglecting the kinematics of the object.
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/h2_sf_final.tex}}
+\caption{The 2D histogram of the final fake rates scale factors in 20 bins of $p_{T}$ and $\eta$.}
+\label{fig:h2_sf_final}
+\end{center}
+\end{figure}
+
+\section{Photon Conversion and SFs}
+\label{phconversion}
+
+Photons and electrons leave similar energy deposits in the electromagnetic calorimeter (ECAL) in the ATLAS detector, and their reconstruction process is parallel\cite{MITREVSKI20162539}. Unconverted photons are reconstructed from ECAL clusters, which are not associated with any track. And converted photons are defined as objects associated with at least one track from the primary vertex to the ECAL cluster. From the reconstruction process, the converted photons have similarities with electrons and it's expected that the fake rates are higher for converted photons. In the previous section, the fake rate scale factors have been presented with total uncertainties. In this section, the fake rate scale factors are defined separately depending on the photon's conversion type (converted or unconverted).
+%The electron and photon reconstruction process is described in section \ref{section:reconstruction}.
+
+The $Z\rightarrow e\gamma$ control regions in data and MC are divided into two classes of the converted and unconverted photon. From selected data events, around $60\%$ of the final state photons belong to converted type and the remaining $40\%$ of the photons are unconverted.  The fake rates in the MC and data have been calculated with the same method described in sections \ref{mcfc} and \ref{datafc}. The inclusive measured fake rates for data and MC and the fake rate scale factors are summarized in table \ref{tab:conversion}. The inclusive MC fake rate for the unconverted photons were $1.29\pm0.14\%$, and $2.50\pm0.10\%$ for the converted photon. As expected, The calculated fake rates for data also shown a similar difference between the converted and unconverted photons. The MC fake rate for different $p_{T}$ and $|\eta|$ of probe photons are shown in figure \ref{fig:mc_fc_conv}. The fake rates are comparatively higher for converted photons in the high $|\eta|$-region. It is because the converted photons are more populated in the high $|\eta|$-region while unconverted photons are distributed more uniformly in different $|\eta|$-regions.
+
+\begin{table}[H]
+\caption{The data and MC fake rates and scale factors for converted and unconverted photons. Only the statistical uncertainties are considered.}
+\label{tab:conversion}
+\centering
+\begin{tabular}{l l l l}
+\toprule
+$\gamma$ Conversion & $FR_{MC}(\%)$ & $FR_{Data}(\%)$ & $SF_{FR}$\\
+\midrule
+Converted & $2.50\pm0.10\%$ & $2.62\pm0.28\%$ & $1.05\pm0.38\%$ \\
+Unconverted & $1.29\pm0.14\%$ & $1.53\pm1.51\%$ & $1.19\pm1.65\%$ \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.35}{\input{Figures/mc_fc_pt_conv.tex}}\scalebox{0.35}{\input{Figures/mc_fc_eta_conv.tex}}
+\caption{The MC fake rate for converted and unconverted $\gamma$ as a function of $p_{T}$ (left) and $\eta$ (right) of the probe particles.}
+\label{fig:mc_fc_conv}
+\end{center}
+\end{figure}
+
+The fake rates and the scale factors are separately shown for unconverted and converted photon in the following. The 2D histograms of figures \ref{fig:hu2_mc_fc} and \ref{fig:hc2_mc_fc} show the MC fake rate for unconverted and converted photons respectively. The fake rates for the unconverted photons varies from $0.7\%$ in the low $p_{T}$ and $\eta$ region to $2.6\%$ in the high $\eta$ region. For the converted photons the variation is much higher as compare to unconverted photons and the fake rates vary from $0.7\%$ to $10\%$ by increase of $p_{T}$ and $\eta$. The data fake rate distributions in figures \ref{fig:hu2_data_fc} and \ref{fig:hc2_data_fc} follow similar pattern as the MC fake rate. At last, the fake rate scale factors are presented in figures \ref{fig:hu2_sf} and \ref{fig:hc2_sf}. The scale factors for the unconverted photons vary from $0.87\pm0.08$ to $1.74\pm0.05$, and for the converted photons vary from $0.87\pm0.02$ to $1.63\pm0.05$.
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.6}{\input{Figures/hu2_mc_fc.tex}}
+\caption{The 2D histogram of the MC fake rate (unconverted) in 20 bins of $p_{T}$ and $\eta$ of the probe particle. Bin value shows the fake rate for the corresponding bin in percentage}
+\label{fig:hu2_mc_fc}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.6}{\input{Figures/hc2_mc_fc.tex}}
+\caption{The 2D histogram of the MC fake rate (Converted) in 20 bins of $p_{T}$ and $\eta$ of the probe particle. Bin value shows the fake rate for the corresponding bin in percentage}
+\label{fig:hc2_mc_fc}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.6}{\input{Figures/hu2_data_fc.tex}}
+\caption{The 2D histogram of the data fake rate (Unconverted) in 20 bins of $p_{T}$ and $\eta$ of the probe particle (The values are in shown in percentage).}
+\label{fig:hu2_data_fc}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.6}{\input{Figures/hc2_data_fc.tex}}
+\caption{The 2D histogram of the data fake rate (Converted) in 20 bins of $p_{T}$ and $\eta$ of the probe particle (The values are in shown in percentage).}
+\label{fig:hc2_data_fc}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/hu2_sf.tex}}
+\caption{The 2D histogram of the final fake rates scale factors (Unconverted) in 20 bins of $p_{T}$ and $\eta$.}
+\label{fig:hu2_sf}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{0.6}{\input{Figures/hc2_sf.tex}}
+\caption{The 2D histogram of the final fake rates scale factors (Converted) in 20 bins of $p_{T}$ and $\eta$.}
+\label{fig:hc2_sf}
+\end{center}
+\end{figure}

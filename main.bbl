@@ -1,0 +1,431 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{sep-physics-experiment}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=FA}{%
+         family={Franklin},
+         familyi={F\bibinitperiod},
+         given={Allan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Perovic},
+         familyi={P\bibinitperiod},
+         given={Slobodan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=ZEN}{%
+         family={Zalta},
+         familyi={Z\bibinitperiod},
+         given={Edward\bibnamedelima N.},
+         giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Metaphysics Research Lab, Stanford University}%
+    }
+    \strng{namehash}{FAPS1}
+    \strng{fullhash}{FAPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{The Stanford Encyclopedia of Philosophy}
+    \field{edition}{Winter 2019}
+    \field{title}{Experiment in Physics}
+    \verb{url}
+    \verb https://plato.stanford.edu/archives/win2019/entries/physics-experimen
+    \verb t/
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{20121}{article}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{ATLAS Collaboration}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.physletb.2012.08.020
+    \endverb
+    \field{issn}{0370-2693}
+    \field{number}{1}
+    \field{pages}{1 \bibrangedash  29}
+    \field{title}{Observation of a new particle in the search for the Standard
+  Model Higgs boson with the ATLAS detector at the LHC}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S037026931200857X
+    \endverb
+    \field{volume}{716}
+    \field{journaltitle}{Physics Letters B}
+    \field{year}{2012}
+  \endentry
+
+  \entry{201230}{article}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{CMS Collaboration}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C2}
+    \strng{fullhash}{C2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.physletb.2012.08.021
+    \endverb
+    \field{issn}{0370-2693}
+    \field{number}{1}
+    \field{pages}{30 \bibrangedash  61}
+    \field{title}{Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0370269312008581
+    \endverb
+    \field{volume}{716}
+    \field{journaltitle}{Physics Letters B}
+    \field{year}{2012}
+  \endentry
+
+  \entry{SMwiki}{online}{}
+    \name{author}{2}{}{%
+      {{hash=M}{%
+         family={MissMJ},
+         familyi={M\bibinitperiod},
+      }}%
+      {{hash=C}{%
+         family={Cush},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MC1}
+    \strng{fullhash}{MC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Standard model of elementary particles}
+    \verb{url}
+    \verb https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_
+    \verb Particles.svg
+    \endverb
+    \field{month}{09}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Interactions}{inbook}{}
+    \name{author}{1}{}{%
+      {{hash=GD}{%
+         family={Griffiths},
+         familyi={G\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley-VCH}%
+    }
+    \strng{namehash}{GD1}
+    \strng{fullhash}{GD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{chapter}{2}
+    \field{pages}{59}
+    \field{title}{Introduction to Elementary Particles}
+    \field{year}{2008}
+  \endentry
+
+  \entry{PhysRevLett.74.2626}{article}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{CDF Collaboration}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.74.2626
+    \endverb
+    \field{issue}{14}
+    \field{pages}{2626\bibrangedash 2631}
+    \field{title}{Observation of Top Quark Production in pp Collisions with the
+  Collider Detector at Fermilab}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.74.2626
+    \endverb
+    \field{volume}{74}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{month}{04}
+    \field{year}{1995}
+  \endentry
+
+  \entry{PhysRevLett.74.2632}{article}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{D0 Collaboration}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.74.2632
+    \endverb
+    \field{issue}{14}
+    \field{pages}{2632\bibrangedash 2637}
+    \field{title}{Observation of the Top Quark}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.74.2632
+    \endverb
+    \field{volume}{74}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{month}{04}
+    \field{year}{1995}
+  \endentry
+
+  \entry{10.1143/PTP.49.652}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KM}{%
+         family={Kobayashi},
+         familyi={K\bibinitperiod},
+         given={Makoto},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Maskawa},
+         familyi={M\bibinitperiod},
+         given={Toshihide},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KMMT1}
+    \strng{fullhash}{KMMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1143/PTP.49.652
+    \endverb
+    \field{issn}{0033-068X}
+    \field{number}{2}
+    \field{pages}{652\bibrangedash 657}
+    \field{title}{CP-Violation in the Renormalizable Theory of Weak
+  Interaction}
+    \verb{url}
+    \verb https://doi.org/10.1143/PTP.49.652
+    \endverb
+    \field{volume}{49}
+    \field{journaltitle}{Progress of Theoretical Physics}
+    \field{month}{02}
+    \field{year}{1973}
+  \endentry
+
+  \entry{borathesis1}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ANB}{%
+         family={Atlay},
+         familyi={A\bibinitperiod},
+         given={Naim\bibnamedelima Bora},
+         giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ANB1}
+    \strng{fullhash}{ANB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{7,9,14}
+    \field{title}{Differentiating Top-Quark - Photon Coupling: Inclusive and
+  Differential Cross-Section Measurements of Top-Quark Pair Production in
+  Association with a Photon in the Single Lepton Channel in pp Collisions Data
+  at 8 TeV with the ATLAS Experiment}
+    \list{institution}{1}{%
+      {University of Siegen}%
+    }
+    \field{type}{PHD}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{toppair-branching}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{D0 Collaboration}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Top pair branching fractions}
+    \verb{url}
+    \verb https://www-d0.fnal.gov/Run2Physics/top/top_public_web_pages/top_feyn
+    \verb man_diagrams.html
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{cernschematic}{article}{}
+    \name{author}{6}{}{%
+      {{hash=NY}{%
+         family={Nie},
+         familyi={N\bibinitperiod},
+         given={Yuancun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Schmidt},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CV}{%
+         family={Chetvertkova},
+         familyi={C\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RTG}{%
+         family={Rosell-Tarragó},
+         familyi={R\bibinithyphendelim T\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Burkart},
+         familyi={B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wollmann},
+         familyi={W\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NYSRCV+1}
+    \strng{fullhash}{NYSRCVRTGBFWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevAccelBeams.20.081001
+    \endverb
+    \field{title}{Numerical simulations of energy deposition caused by 50
+  MeV—50 TeV proton beams in copper and graphite targets}
+    \field{volume}{20}
+    \field{journaltitle}{Physical Review Accelerators and Beams}
+    \field{month}{08}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Pequenao:1095924}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=PJ}{%
+         family={Pequenao},
+         familyi={P\bibinitperiod},
+         given={Joao},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJ1}
+    \strng{fullhash}{PJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Computer generated image of the whole ATLAS detector}
+    \verb{url}
+    \verb https://cds.cern.ch/record/1095924
+    \endverb
+    \field{month}{03}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Pequenao:1505342}{unpublished}{}
+    \name{author}{2}{}{%
+      {{hash=PJ}{%
+         family={Pequenao},
+         familyi={P\bibinitperiod},
+         given={Joao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schaffner},
+         familyi={S\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJSP1}
+    \strng{fullhash}{PJSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{How ATLAS detects particles: diagram of particle paths in the
+  detector}
+    \verb{url}
+    \verb https://cds.cern.ch/record/1505342
+    \endverb
+    \field{month}{01}
+    \field{year}{2013}
+  \endentry
+
+  \entry{MITREVSKI20162539}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={Mitrevski},
+         familyi={M\bibinitperiod},
+         given={Jovan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ1}
+    \strng{fullhash}{MJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.nuclphysbps.2015.09.452
+    \endverb
+    \field{issn}{2405-6014}
+    \field{note}{37th International Conference on High Energy Physics (ICHEP)}
+    \field{pages}{2539 \bibrangedash  2541}
+    \field{title}{Electron and Photon Reconstruction with the ATLAS Detector}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S2405601415009414
+    \endverb
+    \field{volume}{273-275}
+    \field{journaltitle}{Nuclear and Particle Physics Proceedings}
+    \field{year}{2016}
+  \endentry
+\enddatalist
+\endinput

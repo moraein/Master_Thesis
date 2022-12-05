@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/Chapter2.aux
+A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Chapters/Chapter5.aux
+A level-1 auxiliary file: Appendices/AppendixA.aux
+A level-1 auxiliary file: Appendices/AppendixB.aux
+A level-1 auxiliary file: Appendices/AppendixC.aux
+A level-1 auxiliary file: Appendices/AppendixD.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: mybib.bib
+Warning--I'm ignoring 10.1143/PTP.49.652's extra "url" field
+--line 87 of file mybib.bib
+Biblatex version: 3.13
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 15 entries,
+            6365 wiz_defined-function locations,
+            1308 strings with 12258 characters,
+and the built_in function-call counts, 70099 in all, are:
+= -- 4426
+> -- 1648
+< -- 436
++ -- 1524
+- -- 629
+* -- 4553
+:= -- 6755
+add.period$ -- 0
+call.type$ -- 15
+change.case$ -- 225
+chr.to.int$ -- 91
+cite$ -- 28
+duplicate$ -- 7346
+empty$ -- 6704
+format.name$ -- 790
+if$ -- 14884
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 0
+newline$ -- 421
+num.names$ -- 684
+pop$ -- 4734
+preamble$ -- 1
+purify$ -- 292
+quote$ -- 0
+skip$ -- 2700
+stack$ -- 0
+substring$ -- 7039
+swap$ -- 1957
+text.length$ -- 345
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 494
+warning$ -- 0
+while$ -- 932
+width$ -- 0
+write$ -- 407
+(There was 1 warning)
